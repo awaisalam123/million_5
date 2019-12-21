@@ -112,8 +112,8 @@ def item_scrapping(name):
 			item_no += 1
 			url_number += 1
 
-item_scrapping("files4.csv")
-data = pd.read_csv('Scrapped_Data_files4.csv.csv')
+item_scrapping("files35.csv")
+data = pd.read_csv('Scrapped_Data_files35.csv.csv')
 conn = sqlite3.connect("data.sqlite")
 
 conn.execute("CREATE TABLE if not exists data ('Title','Prodcut_VPN','Brand','Price','Description','Images','Category','Sub_Category','Related_Products_VPN','URL','UPC','Warranty','Packaging_info','Specificaiton')")
